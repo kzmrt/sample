@@ -125,3 +125,18 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = 'home'
 # ログアウト後のリダイレクト先URL
 LOGOUT_REDIRECT_URL = 'home'
+# メール情報のコンソール出力
+EMAIL_BACKEND = 'dj#⃣ango.core.mail.backends.console.EmailBackend'
+# メール情報のファイル出力
+#EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+#EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
+# メール送信設定
+"""
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.test.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'test@test.com'
+EMAIL_HOST_PASSWORD = 'passwordpassword'
+EMAIL_USE_TLS = True # TLS (Transport Layer Security)設定
+DEFAULT_FROM_EMAIL = 'test@test.com' # メールのfrom
+"""

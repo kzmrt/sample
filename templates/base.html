@@ -15,6 +15,7 @@
             {% endif %}
         {% else %}
             <li><a href="{% url 'login' %}" class="login">ログイン</a></li>
+            <li><a href="{% url 'password_reset' %}">パスワードリセット</a></li>
         {% endif %}
     {% block content %}
     {% endblock %}
