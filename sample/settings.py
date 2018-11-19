@@ -141,3 +141,5 @@ EMAIL_HOST_PASSWORD = 'passwordpassword'
 EMAIL_USE_TLS = True # TLS (Transport Layer Security)設定
 DEFAULT_FROM_EMAIL = 'test@test.com' # メールのfrom
 """
+# カスタムユーザモデル
+AUTH_USER_MODEL = 'accounts.CustomUser'
